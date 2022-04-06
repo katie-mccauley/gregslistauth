@@ -43,6 +43,8 @@ namespace gregslistauth
       services.AddScoped<AccountService>();
       services.AddTransient<CarsService>();
       services.AddTransient<CarsRepository>();
+      services.AddTransient<HousesService>();
+      services.AddTransient<HousesRepository>();
     }
 
     private void ConfigureCors(IServiceCollection services)
